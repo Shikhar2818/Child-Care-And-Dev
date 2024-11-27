@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            animation: fadeIn 3s ease-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeInText 2s 1s forwards;
+        }
+
+        .section {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: fadeInSection 2s forwards;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .section ul li {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .section ul li:hover {
+            transform: translateY(-5px);
+        }
+
+        .link {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInSection {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .section ul li a {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .section ul li a button {
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .section ul li a button:hover {
+            background-color: #005f6b;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Music Page</h1>
+
+    <div class="section" style="animation-delay: 1s;">
+        <h2>Music Activities</h2>
+        <ul>
+            <li>
+                <strong>Singing Nursery Rhymes</strong>
+                <p>Description: Singing nursery rhymes is a fun way for young children to learn language, rhythm, and memory skills. Songs like "Twinkle, Twinkle, Little Star" and "Old MacDonald Had a Farm" introduce kids to melodies and simple words.</p>
+                <p>Fun Fact: Nursery rhymes like "Ring Around the Rosie" have origins dating back centuries, often tied to historical events!</p>
+                <a href="https://www.youtube.com/kids" class="link" target="_blank"><button>Explore Online</button></a>
+                <a href="#" class="link"><button>Learn More</button></a>
+            </li>
+            <li>
+                <strong>Playing Virtual Instruments</strong>
+                <p>Description: Virtual instruments provide an accessible way for kids to experiment with music. Online keyboards, drums, and xylophones help children understand sound, rhythm, and melody.</p>
+                <p>Fun Fact: The piano has been a foundational instrument in music education for centuries and helps build fine motor skills and hand-eye coordination.</p>
+                <a href="https://virtualpiano.net" class="link" target="_blank"><button>Play Online</button></a>
+                <a href="#" class="link"><button>Learn to Play</button></a>
+            </li>
+            <li>
+                <strong>Dance and Movement Songs</strong>
+                <p>Description: Songs with dance moves, like "The Hokey Pokey" and "Head, Shoulders, Knees, and Toes," encourage physical movement, rhythm, and coordination. Dancing to music also improves body awareness and is a great way to express emotions.</p>
+                <p>Fun Fact: Moving to music has been shown to improve mood and cognitive function in children.</p>
+                <a href="https://www.gonoodle.com" class="link" target="_blank"><button>Explore Online</button></a>
+                <a href="#" class="link"><button>Learn More</button></a>
+            </li>
+            <li>
+                <strong>Learning Simple Beats on Drums</strong>
+                <p>Description: Drumming introduces kids to rhythm and timing. Simple patterns like “boom-tap” can be played on toy drums or makeshift items like pots and pans.</p>
+                <p>Fun Fact: Drumming can help relieve stress, increase focus, and even improve coordination!</p>
+                <a href="https://www.virtualdrumkit.com" class="link" target="_blank"><button>Play Online</button></a>
+                <a href="#" class="link"><button>Learn More</button></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section" style="animation-delay: 3s;">
+        <h2>Learning About Instruments</h2>
+        <ul>
+            <li>
+                <strong>Guitar Basics</strong>
+                <p>Description: The guitar is a versatile instrument for all ages. Kids can start learning basic chords and rhythms, progressing to simple songs. Playing guitar improves hand-eye coordination and fine motor skills.</p>
+                <p>Fun Fact: The guitar has a history dating back over 4,000 years, evolving from ancient stringed instruments.</p>
+                <a href="https://www.virtualguitar.com" class="link" target="_blank"><button>Explore Online</button></a>
+                <a href="#" class="link"><button>Learn to Play</button></a>
+            </li>
+            <li>
+                <strong>Keyboard and Piano Exploration</strong>
+                <p>Description: The piano is a foundational instrument for music theory, making it perfect for beginners. Kids learn scales, notes, and chords, which are building blocks for other musical pursuits.</p>
+                <p>Fun Fact: The modern piano has 88 keys, and learning it can stimulate multiple areas of the brain!</p>
+                <a href="https://virtualpiano.net" class="link" target="_blank"><button>Play Online</button></a>
+                <a href="#" class="link"><button>Learn to Play</button></a>
+            </li>
+            <li>
+                <strong>Ukulele for Beginners</strong>
+                <p>Description: The ukulele is a small, four-stringed instrument that’s easy for kids to pick up. It’s often tuned similarly to the top four strings of a guitar and has a fun, bright sound.</p>
+                <p>Fun Fact: The ukulele originated in Hawaii in the late 19th century, inspired by Portuguese instruments.</p>
+                <a href="https://www.virtualukulele.com" class="link" target="_blank"><button>Explore Online</button></a>
+                <a href="#" class="link"><button>Learn to Play</button></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section" style="animation-delay: 5s;">
+        <h2>Exploring Different Types of Music</h2>
+        <ul>
+            <li>
+                <strong>Classical Music</strong>
+                <p>Description: Classical music has been evolving for centuries and includes compositions by famous composers like Mozart, Beethoven, and Bach. Listening to classical music can improve concentration and expose kids to a wide range of musical dynamics.</p>
+                <p>Fun Fact: Studies have shown that listening to classical music can reduce stress and enhance cognitive function, known as the "Mozart Effect."</p>
+                <a href="https://www.classicsforkids.com" class="link" target="_blank"><button>Explore Online</button></a>
+                <a href="#" class="link"><button>Learn More</button></a>
+            </li>
+            <li>
+                <strong>Jazz Music</strong>
+                <p>Description: Jazz is an expressive, improvisational genre that originated in the African-American communities of New Orleans. It’s known for its lively rhythms and unique melodies and has influenced many other genres.</p>
+                <p>Fun Fact: Jazz incorporates "scat singing," where singers use nonsensical syllables to mimic the sounds of instruments.</p>
+                <a href="https://www.spotify.com" class="link" target="_blank"><button>Explore Online</button></a>
+                <a href="#" class="link"><button>Learn More</button></a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

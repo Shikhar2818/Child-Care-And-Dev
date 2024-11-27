@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  background-color: #575757;
+}
+
+.content {
+  padding: 20px;
+  margin-top: 40px; /* Space for the sticky navbar */
+  
+}
+
+.two-column-layout {
+  display: flex;
+  background-color: wheat;
+  padding: 20px;
+  border-radius: 18px;
+}
+
+.column {
+  flex: 1; /* Each column will take equal space */
+  padding: 10px;
+}
+
+.left-column {
+  border-right: 1px solid #ccc; /* Optional: add a divider */
+}
+
+.left-column:last-child {
+  border-right: none; /* Remove border from last column */
+}
+
+p{
+  text-decoration: solid;
+  font-weight: bold;
+}
+
+.need{
+  background-color: wheat;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 250px;
+  text-align: justify;
+
+}
+
+img{
+  border-radius: 50%;
+}
+.ages li{
+    background-color: rgb(169, 169, 168);
+    font-style: italic;
+
+
+}
+
+.ages li button{
+ font-size: xx-large;
+
+}
+
+.gomusic input[type="button"] {
+  padding: 30px 60px; 
+  font-size: 2rem; 
+  background-color: #c8ced4;
+  color: rgb(196, 53, 53);
+  border:bisque;
+  border-radius: 12px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+/* Button hover effect */
+.gomusic input[type="button"]:hover {
+  background-color: #0056b3; /* Darker shade when hovered */
+}

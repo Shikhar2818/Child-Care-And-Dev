@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Page</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Link to the external CSS -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <style>/* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        /* Container for the content */
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+        
+        /* Popup styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .popup-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 60%;
+            max-width: 500px;
+        }
+        
+        .popup button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .popup button:hover {
+            background-color: #f8a539;
+        }
+        
+        /* Page title */
+        .page-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #6a35fc;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        /* Game section */
+        .game {
+            margin-bottom: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .game h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #8b2df6;
+        }
+        
+        .game p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        
+        .game a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .game a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Welcome to the Games Page!</h2>
+            <p>Explore the indoor and outdoor games with descriptions, fun facts, and links to play online!</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="page-title">Indoor Games</h1>
+
+        <!-- Chess -->
+        <div class="game">
+            <h2>1. Chess</h2>
+            <p><strong>Description:</strong> Chess is a two-player strategy game played on an 8x8 checkered board with 16 pieces per player. Each piece moves in unique ways, and players aim to capture the opponent's king, achieving "checkmate." Chess develops critical thinking, problem-solving skills, and patience.</p>
+            <p><strong>Fun Fact:</strong> Chess is believed to have originated in India over 1,500 years ago. It’s played in tournaments globally and has a World Chess Championship.</p>
+            <p><strong>Play Online:</strong> <a href="https://www.chess.com" target="_blank">Chess.com</a></p>
+            <p><strong>Learn to Play:</strong> <a href="https://www.chess.com/learn-to-play-chess" target="_blank">Chess Basics on Chess.com</a></p>
+        </div>
+
+        <!-- Jigsaw Puzzles -->
+        <div class="game">
+            <h2>2. Jigsaw Puzzles</h2>
+            <p><strong>Description:</strong> Jigsaw puzzles involve assembling pieces to form a complete picture. They come in various sizes and complexities, catering to all ages. Working on puzzles promotes focus, fine motor skills, and spatial reasoning.</p>
+            <p><strong>Fun Fact:</strong> The first jigsaw puzzle was created by John Spilsbury, a London mapmaker, in 1767 to help children learn geography.</p>
+            <p><strong>Play Online:</strong> <a href="https://www.jigsawexplorer.com" target="_blank">Jigsaw Explorer</a></p>
+            <p><strong>Learn More:</strong> <a href="https://www.puzzlewarehouse.com" target="_blank">Puzzle Warehouse</a></p>
+        </div>
+
+        <!-- Scrabble -->
+        <div class="game">
+            <h2>3. Scrabble</h2>
+            <p><strong>Description:</strong> A classic word game where players draw letter tiles to create words on a game board. Each word earns points based on letter values and bonus squares. Scrabble is ideal for expanding vocabulary and enhancing spelling skills.</p>
+            <p><strong>Fun Fact:</strong> Scrabble was invented in 1938 by Alfred Butts, who calculated letter frequencies by studying the front page of the New York Times.</p>
+            <p><strong>Play Online:</strong> <a href="https://www.pogo.com/games/scrabble" target="_blank">Pogo Scrabble</a></p>
+            <p><strong>Learn to Play:</strong> <a href="https://www.hasbro.com/common/instruct/scrabble.pdf" target="_blank">Hasbro Scrabble Rules</a></p>
+        </div>
+
+        <!-- Memory Game -->
+        <div class="game">
+            <h2>4. Memory Game</h2>
+            <p><strong>Description:</strong> This is a matching game where players flip cards to find pairs, testing and improving memory. The game is beneficial for cognitive development, and it can be played solo or with multiple players.</p>
+            <p><strong>Fun Fact:</strong> The memory game format is believed to have originated from traditional "matching pairs" games played in ancient China.</p>
+            <p><strong>Play Online:</strong> <a href="https://www.memory-improvement-tips.com/matching-memory-game.html" target="_blank">Matching Memory Game</a></p>
+            <p><strong>Learn to Play:</strong> <a href="https://www.memoryimprovementtips.com/memory-card-game-rules/" target="_blank">Memory Card Game Rules</a></p>
+        </div>
+
+        <!-- Rock, Paper, Scissors -->
+        <div class="game">
+            <h2>5. Rock, Paper, Scissors</h2>
+            <p><strong>Description:</strong> Rock, Paper, Scissors is a hand game where two players simultaneously form one of three shapes with their hands: rock, paper, or scissors. Rock crushes scissors, scissors cut paper, and paper covers rock. This quick game is often used as a fun decision-making tool.</p>
+            <p><strong>Fun Fact:</strong> The game dates back to ancient China and was popularized in Japan in the 17th century as "Janken."</p>
+            <p><strong>Play Online:</strong> <a href="https://www.playrockpaperscissors.com" target="_blank">Rock, Paper, Scissors Game</a></p>
+            <p><strong>Learn More:</strong> <a href="https://www.wikihow.com/Play-Rock,-Paper,-Scissors" target="_blank">Rock, Paper, Scissors Strategy</a></p>
+        </div>
+
+        <!-- Number Guessing Game -->
+        <div class="game">
+            <h2>6. Number Guessing Game</h2>
+            <p><strong>Description:</strong> This game involves one player choosing a secret number within a set range, and other players try to guess it with hints like "higher" or "lower." It’s a great game for practicing logic and number sense.</p>
+            <p><strong>Fun Fact:</strong> Number guessing games are often used in computer science to teach binary search algorithms!</p>
+            <p><strong>Play Online:</strong> <a href="https://www.numberguessinggame.com" target="_blank">Number Guessing Game</a></p>
+            <p><strong>Learn More:</strong> <a href="https://www.geeksforgeeks.org/binary-search/" target="_blank">Binary Search Explained</a></p>
+        </div>
+    </div>
+
+    <!-- Outdoor Games -->
+    <div class="container">
+        <h1 class="page-title">Outdoor Games</h1>
+        <div class="game">
+            <h2>1. Football</h2>
+            <p><strong>Description:</strong> Football (or soccer) is played between two teams of 11 players each. The objective is to score by getting the ball into the opponent’s goal, using any part of the body except the hands and arms (except the goalkeeper). It’s a highly strategic, physically demanding game that promotes teamwork.</p>
+            <p><strong>Fun Fact:</strong> Football is the world’s most popular sport, with over 4 billion fans globally.</p>
+            <p><strong>Play Online:</strong> <a href="https://www.fifa.com" target="_blank">FIFA Football</a></p>
+            <p><strong>Learn to Play:</strong> <a href="https://www.fifa.com/football-basics" target="_blank">Football Basics on FIFA</a></p>
+            <p><strong>Tutorial:</strong> <a href="https://www.youtube.com/@AllAttack" target="_blank">AllAttack YouTube Channel</a></p>
+        </div>
+
+        <!-- Basketball -->
+        <div class="game">
+            <h2>2. Basketball</h2>
+            <p><strong>Description:</strong> Basketball is a fast-paced game where two teams of five players each score points by shooting a ball through the opposing team’s hoop. This sport improves agility, teamwork, and coordination.</p>
+            <p><strong>Fun Fact:</strong> Basketball was invented in 1891 by Dr. James Naismith in Massachusetts, originally played with a soccer ball and peach baskets.</p>
+            <p><strong>Play Online:</strong> <a href="https://www.basketballgames.com" target="_blank">Basketball Games</a></p>
+            <p><strong>Learn to Play:</strong> <a href="https://www.nba.com/basketball-basics" target="_blank">Basketball Basics on NBA</a></p>
+            <p><strong>Tutorial:</strong> <a href="https://www.youtube.com/@GetHandles" target="_blank">GetHandles YouTube Channel</a></p>
+        </div>
+
+        <!-- Cricket -->
+        <div class="game">
+            <h2>3. Cricket</h2>
+            <p><strong>Description:</strong> Cricket is played between two teams, where one team bats, attempting to score runs, while the other bowls and fields to restrict runs. The game is played in different formats, from short T20s to long Test matches.</p>
+            <p><strong>Fun Fact:</strong> Cricket is one of the oldest team sports, with records of matches played in the 16th century in England.</p>
+            <p><strong>Play Online:</strong> <a href="https://www.cricketgames.com" target="_blank">Cricket Games</a></p>
+            <p><strong>Learn to Play:</strong> <a href="https://www.cricket.com/rules" target="_blank">Basic Rules of Cricket</a></p>
+            <p><strong>Tutorial:</strong> <a href="https://www.youtube.com/playlist?list=PLsq7Nv0uQFvqpufcShah_yPLPoKhzFDda" target="_blank">Cricket Tutorials</a></p>
+        </div>
+
+        <!-- Badminton -->
+        <div class="game">
+            <h2>4. Badminton</h2>
+            <p><strong>Description:</strong> Badminton is played with rackets and a shuttlecock, either as singles or doubles. Players hit the shuttlecock over a net, aiming to land it in the opponent's court. It’s an excellent sport for agility, reflexes, and coordination.</p>
+            <p><strong>Fun Fact:</strong> Badminton became an Olympic sport in 1992, though its roots go back to a game called "battledore and shuttlecock" in ancient Greece and China.</p>
+            <p><strong>Learn to Play:</strong> <a href="https://www.badmintonrules.com" target="_blank">Badminton Rules and Tips</a></p>
+            <p><strong>Tutorial:</strong> <a href="https://www.youtube.com/playlist?list=PL6bpt8HeVN__MFrDHiCnbrgtRsJH0lCXR" target="_blank">Badminton Tutorials</a></p>
+        </div>
+
+        <!-- Tennis -->
+        <div class="game">
+            <h2>5. Tennis</h2>
+            <p><strong>Description:</strong> Tennis is a racquet sport where players hit a ball over a net, aiming to land it within the opponent’s court. It’s played in singles or doubles format. Tennis builds endurance, precision, and strength.</p>
+            <p><strong>Fun Fact:</strong> The earliest form of tennis, called "jeu de paume," originated in France in the 12th century and was played with the hand instead of a racquet.</p>
+            <p><strong>Play Online:</strong> <a href="https://www.onlinetennisgame.com" target="_blank">Online Tennis Game</a></p>
+            <p><strong>Learn to Play:</strong> <a href="https://www.tennis.com/basics" target="_blank">Tennis Basics</a></p>
+            <p><strong>Tutorial:</strong> <a href="https://www.youtube.com/playlist?list=PLEd-bhJ7w1qn9mi1EHLlM4QIb2kah_Lt-" target="_blank">Tennis Tutorials</a></p>
+        </div>
+
+        <!-- Hide and Seek -->
+        <div class="game">
+            <h2>6. Hide and Seek</h2>
+            <p><strong>Description:</strong> In this timeless game, one player covers their eyes and counts while others hide. The seeker then tries to find all the hidden players. It builds spatial awareness, patience, and social skills.</p>
+            <p><strong>Fun Fact:</strong> Hide and Seek is played around the world with regional variations. In Japan, it’s called "Kakurenbo."</p>
+            <p><strong>Learn to Play:</strong> <a href="https://www.wikihow.com/Play-Hide-and-Seek" target="_blank">Hide and Seek Rules</a></p>
+        </div>
+
+        <!-- Tag -->
+        <div class="game">
+            <h2>7. Tag</h2>
+            <p><strong>Description:</strong> A fast-paced game where one player is "it" and chases others, trying to tag them. Once tagged, a new player becomes "it." Tag promotes physical exercise, coordination, and quick reflexes.</p>
+            <p><strong>Fun Fact:</strong> There are more than 50 different versions of tag, including freeze tag and shadow tag!</p>
+            <p><strong>Learn More:</strong> <a href="https://www.taggamevarieties.com" target="_blank">Tag Game Variations</a></p>
+        </div>
+
+        <!-- Hopscotch -->
+        <div class="game">
+            <h2>8. Hopscotch</h2>
+            <p><strong>Description:</strong> In hopscotch, players throw a small object onto a drawn course and hop on one foot through numbered squares to retrieve it. This game develops balance, coordination, and number recognition.</p>
+            <p><strong>Fun Fact:</strong> Ancient Roman soldiers played a form of hopscotch to test their endurance while wearing armor!</p>
+            <p><strong>Learn to Play:</strong> <a href="https://www.hopscotchrules.com" target="_blank">Hopscotch Rules</a></p>
+        </div>
+
+        <!-- Red Light, Green Light -->
+        <div class="game">
+            <h2>9. Red Light, Green Light</h2>
+            <p><strong>Description:</strong> In this game, one player (the "traffic light") calls "green light" to let players move forward and "red light" to make them freeze. Anyone caught moving on a "red light" must go back to the starting line. It’s great for building self-control and focus.</p>
+            <p><strong>Fun Fact:</strong> The game is known as "Statues" in Australia and "Un, Dos, Tres, Pica Parede" in Spain.</p>
+            <p><strong>Learn to Play:</strong> <a href="https://www.redlightgreenlight.com/rules" target="_blank">Red Light, Green Light Rules</a></p>
+        </div>
+   
+
+    <footer>
+        <p>Explore more games and have fun!</p>
+        <a href="#">Back to Top</a>
+    </footer>
+
+    <script>
+        // Popup display on page load
+        window.onload = function() {
+            document.getElementById("popup").style.display = "block";
+        };
+
+        // Function to close popup
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
